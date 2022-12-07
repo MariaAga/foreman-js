@@ -2,6 +2,6 @@ $img-path: '~patternfly/dist/img/';
 $font-path: '~patternfly/dist/fonts/';
 $icon-font-path: '~patternfly/dist/fonts/';
 
-@import '~patternfly/dist/sass/patternfly';
-@import '~patternfly-react/dist/sass/patternfly-react';
-@import '~font-awesome-sass/assets/stylesheets/_font-awesome';
+@use '~patternfly/dist/sass/patternfly';
+@use '~patternfly-react/dist/sass/patternfly-react';
+@use '~font-awesome-sass/assets/stylesheets/_font-awesome';

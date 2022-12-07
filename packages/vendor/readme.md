@@ -47,8 +47,8 @@ attribute | default value | description
 `@theforeman/vendor` based on patternfly-react. It build the patternfly-react partials into the `./dist/foreman-vendor.bundle.css` and provides their variables and mixins sets to reuse.
 
 ```css
-@import "~@theforeman/vendor/scss/variables";
-@import "~@theforeman/vendor/scss/mixins";
+@use "~@theforeman/vendor/scss/variables";
+@use "~@theforeman/vendor/scss/mixins";
 ```
 
 ### Development enviorment

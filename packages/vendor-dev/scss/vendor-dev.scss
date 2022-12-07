@@ -1,7 +1,7 @@
 /**
   Mapping to vendor-core scss
 */
-@import './variables';
-@import './mixins';
+@use './variables';
+@use './mixins';
 
-@import '~@theforeman/vendor-core/scss/vendor-core';
+@use '~@theforeman/vendor-core/scss/vendor-core';

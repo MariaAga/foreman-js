@@ -45,7 +45,11 @@ const config = {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader?url=false',
+          'sass-loader',
+        ],
       },
       {
         test: /\.(svg|ttf|eot|woff|woff2)$/,

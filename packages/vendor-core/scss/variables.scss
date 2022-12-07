@@ -1,20 +1,17 @@
-/**
-  Third Party variables imports here
-*/
-// patternfly v3
-$font-path: '~patternfly/dist/fonts/';
-$img-path: '~patternfly/dist/img/';
-$icon-font-path: '~patternfly/dist/fonts/';
-
-// patternfly v4
-$pf-global--font-path: '~@patternfly/patternfly/assets/fonts';
-$fa-font-path: '~@patternfly/patternfly/assets/fonts/webfonts';
-$pf-global--fonticon-path: '~@patternfly/patternfly/assets/pficon';
-$pf-global--image-path: '~@patternfly/patternfly/assets/images';
+// /**
+//   Third Party variables imports here
+// */
 
 // patternfly v3
-@import '~bootstrap-sass/assets/stylesheets/bootstrap/variables';
-@import '~patternfly/dist/sass/patternfly/variables';
+@forward '~bootstrap-sass/assets/stylesheets/bootstrap/variables' as bootsrtap-*;
+@forward '~patternfly/dist/sass/patternfly/variables'  as patternfly3-* with ($font-path: '~patternfly/dist/fonts/',
+  $img-path: '~patternfly/dist/img/',
+  $icon-font-path: '~patternfly/dist/fonts/',
+);
 
 // patternfly v4
-@import '~@patternfly/patternfly/base/patternfly-variables';
+@forward '~@patternfly/patternfly/base/patternfly-variables' with ($pf-global--font-path: '~@patternfly/patternfly/assets/fonts',
+  $fa-font-path: '~@patternfly/patternfly/assets/fonts/webfonts',
+  $pf-global--fonticon-path: '~@patternfly/patternfly/assets/pficon',
+  $pf-global--image-path: '~@patternfly/patternfly/assets/images',
+);

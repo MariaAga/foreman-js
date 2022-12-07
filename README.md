@@ -29,7 +29,7 @@ Foreman and its plugins use many of the same JavaScript dependencies (npm packag
 
 _Note:_ In Foreman & plugins JavaScript code, you __do not__ need to import anything explicitly from vendor (~`import react from '@theforeman/vendor'`~); you can continue to import all modules like normal (`import react from 'react';`).
 
-In your CSS code, the `@import` statements _do_ need to be explicit; see [this part of @theforeman/vendor readme.](https://github.com/theforeman/foreman-js/tree/master/packages/vendor#stylesheets)
+In your CSS code, the `@use` statements _do_ need to be explicit; see [this part of @theforeman/vendor readme.](https://github.com/theforeman/foreman-js/tree/master/packages/vendor#stylesheets)
 
 ## Other packages
 

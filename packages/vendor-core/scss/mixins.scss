@@ -1,3 +1,10 @@
+/**
+  Third Party mixins imports here
+*/
+@use '~patternfly/dist/sass/patternfly/bootstrap-mixin-overrides' as *;
+@use '~patternfly/dist/sass/patternfly/mixins' as *;
+@use '~patternfly/dist/sass/patternfly/variables' as *;
+
 // Mixins - Bootstrap overrides
 // -------------------
 @mixin box-shadow($shadow...) {
@@ -14,8 +21,3 @@
     @include box-shadow(unquote("inset 0 1px 1px rgba(3, 3, 3, 0.075), 0 0 8px #{$color-rgba}"));
   }
 }
-/**
-  Third Party mixins imports here
-*/
-@import '~patternfly/dist/sass/patternfly/bootstrap-mixin-overrides';
-@import '~patternfly/dist/sass/patternfly/mixins';
